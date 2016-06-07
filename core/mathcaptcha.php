@@ -37,7 +37,7 @@ class MathCaptcha{
 	
 	public function setCaptcha($first, $end)
 	{
-		$this->start=$first;
+		$this->start	=$first;
 		$this->end	=$end;
 	}
 	public function currentCaptcha()
