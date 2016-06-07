@@ -15,17 +15,17 @@ class MathCaptcha{
 	}
 	public function execCaptcha()
 	{
-		$firstdigit		= mt_rand($this->start, $this->end);
+		$firstdigit	= mt_rand($this->start, $this->end);
 		$seconddigit	= mt_rand($this->start, $this->end);
 		
 		if(mt_rand(0,1) === 1)
 		{
-			$this->show				= "$firstdigit + $seconddigit";
+			$this->show		= "$firstdigit + $seconddigit";
 			$_SESSION['captcha']	= $firstdigit+$seconddigit;
 		}
 		else
 		{
-			$this->show				= "$firstdigit - $seconddigit";
+			$this->show		= "$firstdigit - $seconddigit";
 		}
 	}
 	
