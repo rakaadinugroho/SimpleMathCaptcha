@@ -10,7 +10,7 @@ class MathCaptcha{
 	
 	public function __construct()
 	{
-		$this->start=1;
+		$this->start	=1;
 		$this->end	=20;
 	}
 	public function execCaptcha()
